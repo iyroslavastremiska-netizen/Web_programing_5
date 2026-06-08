@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме | Стремінська Ярослава</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="resume-container">
+        
+        <header class="header-section">
+            <button id="theme-toggle" type="button" aria-label="Переключити тему">
+                <span id="theme-toggle-text">Нічний режим</span>
+            </button>
+
+            <h1>Стремінська Ярослава</h1>
+            <p class="subtitle">Студентка кафедри Кібербезпеки, Національний університет "Львівська політехніка"</p>
+            
+            <div class="contact-info">
+                <span>Львів, Україна</span>
+                <span class="bullet">•</span>
+                <a href="mailto:iyroslavastremiska@gmail.com">iyroslavastremiska@gmail.com</a>
+                <span class="bullet">•</span>
+                <a href="https://github.com/iyroslavastremiska-netizen" target="_blank" rel="noreferrer">
+                    github.com/iyroslavastremiska-netizen
+                </a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="section-block">
+                <div class="section-title">
+                    <div class="accent-line"></div>
+                    <h2>Про себе</h2>
+                </div>
+                <p class="description-text">
+                    Вмотивована студентка спеціальності "Кібербезпека", яка активно цікавиться мережевою безпекою, захистом інформації та тестуванням на проникнення. Прагну розвивати практичні навички в області аналізу вразливостей та побудови захищених систем. Швидко навчаюся та готова до вирішення складних технічних завдань.
+                </p>
+            </section>
+
+            <section class="section-block">
+                <div class="section-title">
+                    <div class="accent-line"></div>
+                    <h2>Освіта</h2>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <h3>Національний університет "Львівська політехніка"</h3>
+                        <span class="date-badge">2023 — теперішній час</span>
+                    </div>
+                    <p class="specialty-text">Спеціальність: Кібербезпека та захист інформації</p>
+                    <p class="description-text">
+                        Здобуваю базові та профільні знання у сферах криптографії, безпеки операційних систем, архітектури комп'ютерних мереж.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section-block">
+                <div class="section-title">
+                    <div class="accent-line"></div>
+                    <h2>Досвід роботи та проєктна діяльність</h2>
+                </div>
+                <div class="info-card">
+                    <div class="card-header">
+                        <h3>Навчальні та індивідуальні проєкти</h3>
+                        <span class="date-badge">2025 — 2026</span>
+                    </div>
+                    <ul class="projects-list">
+                        <li>Налаштування та конфігурація захищених локальних мереж із використанням віртуалізацій та міжмережевих екранів.</li>
+                        <li>Аналіз безпеки веб-ресурсів та дослідження вразливостей за допомогою інструментів Kali Linux.</li>
+                        <li>Дослідження роботи криптографічних протоколів та алгоритмів розподілу секретів у межах курсових робіт.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-block">
+                <div class="section-title">
+                    <div class="accent-line"></div>
+                    <h2>Технічні навички</h2>
+                </div>
+                <div class="skills-grid">
+                    <span class="skill-badge">Network Security</span>
+                    <span class="skill-badge">ACL / DMZ</span>
+                    <span class="skill-badge">TCP/IP</span>
+                    <span class="skill-badge">Linux (Kali, Ubuntu)</span>
+                    <span class="skill-badge">VirtualBox</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">HTML5 & CSS3</span>
+                    <span class="skill-badge">Cryptography</span>
+                </div>
+            </section>
+
+            <section class="section-block">
+                <div class="section-title">
+                    <div class="accent-line"></div>
+                    <h2>Відгуки попередніх роботодавців</h2>
+                </div>
+                <div id="comments-container" class="comments-list">
+                    <p class="loading-text">Завантаження відгуків...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-section">
+            <p class="copyright">&copy; 2026 Стремінська Ярослава. Завдання з Web-програмування.</p>
+            <div id="system-info-box" class="system-box hidden">
+                <p class="system-title">Дані системи з localStorage:</p>
+                <div id="system-info-content" class="system-grid"></div>
+            </div>
+        </footer>
+
+    </div>
+
+    <div id="contactModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button id="closeModal" class="close-button" type="button">&times;</button>
+            <h2>Зворотній зв'язок</h2>
+            <p class="modal-subtitle">Будь ласка, заповніть форму нижче.</p>
+            <form action="https://formspree.io/f/mqeopkka" method="POST">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="email" name="email" placeholder="Ваш Email" required>
+                <input type="tel" name="phone" placeholder="Номер телефону" required>
+                <textarea name="message" rows="3" placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

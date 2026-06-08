@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Вказівка для Tailwind v4, що темна тема керується класом .dark на тегу html */
+@variant dark (html.dark &);
+.app-container.light {
+    --bg-color: #f8fafc;
+    --text-color: #334155;
+    --paper-color: #ffffff;
+    --accent-color: #059669;
+    --border-color: #e2e8f0;
+}
+
+.app-container.dark {
+    --bg-color: #0f172a;
+    --text-color: #cbd5e1;
+    --paper-color: #1e293b;
+    --accent-color: #10b981;
+    --border-color: #334155;
+}
+
+
+.app-container {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
